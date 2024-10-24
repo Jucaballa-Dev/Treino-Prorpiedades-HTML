@@ -1,0 +1,30 @@
+<<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulários Sobrepostos</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Formulário Principal -->
+      <div class="formulario" id="form1">
+        <h2>Formulário Principal</h2>
+        <input type="text" placeholder="Nome" />
+        <input type="email" placeholder="Email" />
+        <button id="botaoSecundario">Ir para Formulário Secundário</button>
+      </div>
+
+      <!-- Formulário Secundário (inicialmente escondido) -->
+      <div class="formulario escondido" id="form2">
+        <h2>Formulário Secundário</h2>
+        <input type="text" placeholder="Endereço" />
+        <input type="number" placeholder="Idade" />
+        <button id="botaoPrincipal">Voltar ao Formulário Principal</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
